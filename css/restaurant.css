@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+article.crumbs {
+  width: 100%;
+  height: 85.2vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+article.crumbs img {
+  width: 100%;
+  height: 100%;
+}
+
+article.crumbs h1 {
+  position: absolute;
+  bottom: 250px;
+  left: 50px;
+  right: 50px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-weight: 500;
+  font-size: 12rem;
+}
+
+@media (max-width: 574px) {
+  article.crumbs h1 {
+    top: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  article.crumbs h1 {
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10rem;
+  }
+}
+
+article.model {
+  padding: 100px;
+}
+
+@media (max-width: 574px) {
+  article.model {
+    padding: 50px;
+  }
+}
+
+article.model h1 {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.72), 0 0 14px rgba(255, 255, 255, 0.45);
+}
+
+article.model .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+@media (max-width: 574px) {
+  article.model .picture {
+    display: block;
+    margin: auto;
+  }
+}
+
+article.model .outward {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+article.model .outward .img {
+  width: 350px;
+  height: 350px;
+  margin-right: 100px;
+}
+
+@media (max-width: 574px) {
+  article.model .outward .img {
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  article.model .outward .img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+article.model .outward .img img {
+  width: 100%;
+  height: 100%;
+}
+
+article.model .outward .img:last-child {
+  margin-right: 0;
+}
+
+article.model .pool {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+article.model .pool .img {
+  width: 350px;
+  height: 350px;
+  margin-right: 100px;
+}
+
+@media (max-width: 574px) {
+  article.model .pool .img {
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  article.model .pool .img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+article.model .pool .img img {
+  width: 100%;
+  height: 100%;
+}
+
+article.model .pool .img:last-child {
+  margin-right: 0;
+}
+
+article.model .Bar {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+article.model .Bar .img {
+  width: 350px;
+  height: 350px;
+  margin-right: 100px;
+}
+
+@media (max-width: 574px) {
+  article.model .Bar .img {
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  article.model .Bar .img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+article.model .Bar .img img {
+  width: 100%;
+  height: 100%;
+}
+
+article.model .Bar .img:last-child {
+  margin-right: 0;
+}
+
+article.model .inside {
+  margin-top: 25px;
+}
+
+article.model .inside .img {
+  width: 350px;
+  height: 350px;
+  margin-right: 100px;
+}
+
+@media (max-width: 574px) {
+  article.model .inside .img {
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  article.model .inside .img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+article.model .inside .img img {
+  width: 100%;
+  height: 100%;
+}
+
+article.model .inside .img:last-child {
+  margin-right: 0;
+}
+
+article.model .overmodel {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10% 20%;
+  font-size: 0;
+  display: none;
+  z-index: 1001;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+@media (max-width: 574px) {
+  article.model .overmodel {
+    padding: 40% 4%;
+  }
+}
+
+article.model .overmodel .bigimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+article.model .overmodel .bigimg img {
+  width: 100%;
+  height: 100%;
+}
+
+article.model .overmodel span.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=restaurant.css.map */

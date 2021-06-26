@@ -1,0 +1,240 @@
+@import "./all.scss";
+@import "./mixin.scss";
+article.crumbs {
+    width: 100%;
+    height: 85.2vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        position: absolute;
+        bottom: 250px;
+        left: 50px;
+        right: 50px;
+        color: white;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-weight: 500;
+        font-size: 12rem;
+        @include medium {
+            top: 260px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            word-break: keep-all;
+        }
+        @include small {
+            top: 180px;
+            left: 0;
+            right: 9px;
+            bottom: 0;
+            word-break: keep-all;
+            font-size: 11rem;
+        }
+    }
+}
+
+main {
+    padding: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: white;
+    .Mainmeal {
+        .main1 {
+            display: block;
+            margin-top: 100px;
+            .title {
+                text-align: start;
+                vertical-align: middle;
+                font-size: 0;
+                color: rgb(92, 204, 224);
+                .titleimg {
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .titletxt {
+                    display: inline-block;
+                    font-size: 3rem;
+                }
+            }
+            .meal {
+                @include medium {
+                    margin: auto;
+                    text-align: center;
+                }
+                .cold {
+                    display: inline-block;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    @include small {
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                    .coldimg {
+                        width: 200px;
+                        height: 200px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: transform .5s;
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                    .coldtext {
+                        text-align: center;
+                        padding: 5px;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-top: 0px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: rgb(92, 204, 224);
+                            color: white;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .main2 {
+            display: block;
+            margin-top: 100px;
+            .title {
+                text-align: start;
+                vertical-align: middle;
+                color: rgb(232, 161, 105);
+                .titleimg {
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .titletxt {
+                    display: inline-block;
+                    font-size: 3rem;
+                }
+            }
+            .meal {
+                @include medium {
+                    margin: auto;
+                    text-align: center;
+                }
+                .hot {
+                    display: inline-block;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    @include small {
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    .hotimg {
+                        width: 200px;
+                        height: 200px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: transform .5s;
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                    .hottext {
+                        text-align: center;
+                        padding: 5px;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-top: 0px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: rgb(232, 161, 105);
+                            color: white;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .main3 {
+            display: block;
+            margin-top: 100px;
+            .title {
+                text-align: start;
+                vertical-align: middle;
+                .titleimg {
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .titletxt {
+                    display: inline-block;
+                    font-size: 3rem;
+                }
+            }
+            .meal {
+                @include medium {
+                    margin: auto;
+                    text-align: center;
+                }
+                .alchol {
+                    display: inline-block;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    @include small {
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    .alcholimg {
+                        width: 200px;
+                        height: 200px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: transform .5s;
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                    .alcholtext {
+                        text-align: center;
+                        padding: 5px;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-top: 0px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

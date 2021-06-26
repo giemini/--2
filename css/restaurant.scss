@@ -1,0 +1,197 @@
+@import "./all.scss";
+@import "./mixin.scss";
+article.crumbs {
+    width: 100%;
+    height: 85.2vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        position: absolute;
+        bottom: 250px;
+        left: 50px;
+        right: 50px;
+        color: white;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-weight: 500;
+        font-size: 12rem;
+        @include medium {
+            top: 180px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        @include small {
+            top: 130px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 10rem;
+        }
+    }
+}
+
+article.model {
+    padding: 100px;
+    @include medium {
+        padding: 50px;
+    }
+    h1 {
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.72), 0 0 14px rgba(255, 255, 255, 0.45);
+        ;
+    }
+    .picture {
+        display: flex;
+        cursor: pointer;
+        @include medium {
+            display: block;
+            margin: auto;
+        }
+    }
+    .outward {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        .img {
+            width: 350px;
+            height: 350px;
+            margin-right: 100px;
+            @include medium {
+                margin-bottom: 25px;
+                margin-right: 25px;
+                margin-left: 17px;
+            }
+            @include small {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .pool {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        .img {
+            width: 350px;
+            height: 350px;
+            margin-right: 100px;
+            @include medium {
+                margin-bottom: 25px;
+                margin-right: 25px;
+                margin-left: 17px;
+            }
+            @include small {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .Bar {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        .img {
+            width: 350px;
+            height: 350px;
+            margin-right: 100px;
+            @include medium {
+                margin-bottom: 25px;
+                margin-right: 25px;
+                margin-left: 17px;
+            }
+            @include small {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .inside {
+        margin-top: 25px;
+        .img {
+            width: 350px;
+            height: 350px;
+            margin-right: 100px;
+            @include medium {
+                margin-bottom: 25px;
+                margin-right: 25px;
+                margin-left: 17px;
+            }
+            @include small {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .overmodel {
+        position: fixed;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: hsla(0%, 0%, 0%, .5);
+        padding: 10% 20%;
+        font-size: 0;
+        display: none;
+        z-index: 1001;
+        transition: .5s ease;
+        @include medium {
+            padding: 40% 4%;
+        }
+        .bigimg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        span.close {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+    }
+}

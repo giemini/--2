@@ -1,0 +1,430 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+article.crumbs {
+  width: 100%;
+  height: 85.2vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+article.crumbs img {
+  width: 100%;
+  height: 100%;
+}
+
+article.crumbs h1 {
+  position: absolute;
+  bottom: 250px;
+  left: 50px;
+  right: 50px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-weight: 500;
+  font-size: 12rem;
+}
+
+@media (max-width: 574px) {
+  article.crumbs h1 {
+    top: 260px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    word-break: keep-all;
+  }
+}
+
+@media (max-width: 375px) {
+  article.crumbs h1 {
+    top: 180px;
+    left: 0;
+    right: 9px;
+    bottom: 0;
+    word-break: keep-all;
+    font-size: 11rem;
+  }
+}
+
+main {
+  padding: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: white;
+}
+
+main .Mainmeal .main1 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main1 .title {
+  text-align: start;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+main .Mainmeal .main1 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main1 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main1 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main1 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main1 .meal .beef {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main1 .meal .beef {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main1 .meal .beef .beefimg {
+  width: 200px;
+  height: 200px;
+}
+
+main .Mainmeal .main1 .meal .beef .beefimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main1 .meal .beef .beeftext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main1 .meal .beef .beeftext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main1 .meal .beef:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main2 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main2 .title {
+  text-align: start;
+  vertical-align: middle;
+}
+
+main .Mainmeal .main2 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main2 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main2 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main2 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main2 .meal .goat {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main2 .meal .goat {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main2 .meal .goat .goatimg {
+  width: 200px;
+  height: 200px;
+}
+
+main .Mainmeal .main2 .meal .goat .goatimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main2 .meal .goat .goattext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main2 .meal .goat .goattext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main2 .meal .goat:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main3 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main3 .title {
+  text-align: start;
+  vertical-align: middle;
+}
+
+main .Mainmeal .main3 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main3 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main3 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main3 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main3 .meal .checken {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main3 .meal .checken {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main3 .meal .checken .checkenimg {
+  width: 200px;
+  height: 200px;
+}
+
+main .Mainmeal .main3 .meal .checken .checkenimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main3 .meal .checken .checkentext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main3 .meal .checken .checkentext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main3 .meal .checken:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main4 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main4 .title {
+  text-align: start;
+  vertical-align: middle;
+}
+
+main .Mainmeal .main4 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main4 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main4 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main4 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main4 .meal .pig {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main4 .meal .pig {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main4 .meal .pig .pigimg {
+  width: 200px;
+  height: 200px;
+}
+
+main .Mainmeal .main4 .meal .pig .pigimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main4 .meal .pig .pigtext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main4 .meal .pig .pigtext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main4 .meal .pig:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main5 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main5 .title {
+  text-align: start;
+  vertical-align: middle;
+}
+
+main .Mainmeal .main5 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main5 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main5 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main5 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main5 .meal .seafood {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main5 .meal .seafood {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main5 .meal .seafood .seafoodimg {
+  width: 200px;
+  height: 200px;
+}
+
+main .Mainmeal .main5 .meal .seafood .seafoodimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main5 .meal .seafood .seafoodtext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main5 .meal .seafood .seafoodtext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main5 .meal .seafood:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=Mainmeal.css.map */

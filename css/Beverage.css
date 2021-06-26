@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+article.crumbs {
+  width: 100%;
+  height: 85.2vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+article.crumbs img {
+  width: 100%;
+  height: 100%;
+}
+
+article.crumbs h1 {
+  position: absolute;
+  bottom: 250px;
+  left: 50px;
+  right: 50px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-weight: 500;
+  font-size: 12rem;
+}
+
+@media (max-width: 574px) {
+  article.crumbs h1 {
+    top: 260px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    word-break: keep-all;
+  }
+}
+
+@media (max-width: 375px) {
+  article.crumbs h1 {
+    top: 180px;
+    left: 0;
+    right: 9px;
+    bottom: 0;
+    word-break: keep-all;
+    font-size: 11rem;
+  }
+}
+
+main {
+  padding: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: white;
+}
+
+main .Mainmeal .main1 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main1 .title {
+  text-align: start;
+  vertical-align: middle;
+  font-size: 0;
+  color: #5ccce0;
+}
+
+main .Mainmeal .main1 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main1 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main1 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main1 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main1 .meal .cold {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main1 .meal .cold {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+main .Mainmeal .main1 .meal .cold .coldimg {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+main .Mainmeal .main1 .meal .cold .coldimg img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+main .Mainmeal .main1 .meal .cold .coldimg img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+main .Mainmeal .main1 .meal .cold .coldtext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main1 .meal .cold .coldtext:hover {
+  background-color: #5ccce0;
+  color: white;
+}
+
+main .Mainmeal .main1 .meal .cold:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main2 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main2 .title {
+  text-align: start;
+  vertical-align: middle;
+  color: #e8a169;
+}
+
+main .Mainmeal .main2 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main2 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main2 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main2 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main2 .meal .hot {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main2 .meal .hot {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main2 .meal .hot .hotimg {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+main .Mainmeal .main2 .meal .hot .hotimg img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+main .Mainmeal .main2 .meal .hot .hotimg img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+main .Mainmeal .main2 .meal .hot .hottext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main2 .meal .hot .hottext:hover {
+  background-color: #e8a169;
+  color: white;
+}
+
+main .Mainmeal .main2 .meal .hot:last-child {
+  margin-right: 0;
+}
+
+main .Mainmeal .main3 {
+  display: block;
+  margin-top: 100px;
+}
+
+main .Mainmeal .main3 .title {
+  text-align: start;
+  vertical-align: middle;
+}
+
+main .Mainmeal .main3 .title .titleimg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+main .Mainmeal .main3 .title .titleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+main .Mainmeal .main3 .title .titletxt {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 574px) {
+  main .Mainmeal .main3 .meal {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+main .Mainmeal .main3 .meal .alchol {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  main .Mainmeal .main3 .meal .alchol {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+main .Mainmeal .main3 .meal .alchol .alcholimg {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+main .Mainmeal .main3 .meal .alchol .alcholimg img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+main .Mainmeal .main3 .meal .alchol .alcholimg img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+main .Mainmeal .main3 .meal .alchol .alcholtext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+main .Mainmeal .main3 .meal .alchol .alcholtext:hover {
+  background-color: black;
+  color: white;
+}
+
+main .Mainmeal .main3 .meal .alchol:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=Beverage.css.map */

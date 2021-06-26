@@ -1,0 +1,42 @@
+@import "./all.scss";
+@import "./mixin.scss";
+article.slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    @include medium {
+        width: 100%;
+    }
+    @include small {
+        width: 100%;
+    }
+    #swiper {
+        display: flex;
+        flex-direction: row;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+    #prev {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        left: 5%;
+        width: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    #next {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        right: 5%;
+        width: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}

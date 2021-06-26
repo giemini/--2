@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/Dessert.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="crumbs">
+        <img src="./set_mealimg/unnamed.png" alt="">
+        <h1>甜點</h1>
+    </article>
+
+    <header>
+        <div class="logo">
+            <a href="./inedx.html">
+                <img src="./logoimg/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./food.html" class="navbar">
+                <div class="menu bill">菜單</div>
+            </a>
+            <a href="./restaurant.html">
+                <div class="restaurant">環境介紹</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="aboutus">關於我們</div>
+            </a>
+        </div>
+    </header>
+    <div class="menulist off">
+        <div class="list">
+            <a href="./set_meal.html">
+                <p>套餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./MainMeal.html">
+                <p>主餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./SideMeal.html">
+                <p>副餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Beverage.html">
+                <p>飲料</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Dessert.html">
+                <p>甜點</p>
+            </a>
+        </div>
+    </div>
+    <main>
+        <article class="Mainmeal">
+            <div class="main1">
+                <div class="title">
+                    <div class="titletxt">
+                        <p>甜點</p>
+                    </div>
+                </div>
+                <div class="meal">
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/images.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>烤布蕾</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/yb26-016.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>起士蛋糕</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/下載.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>蘋果派</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/yb27-052.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>提拉米蘇</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/2011203372pic_outside_729411.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>巧克力蛋糕</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <div class="dessertimg ">
+                            <img src="./Dessertimg/6805712_R.jpg" alt=" ">
+                        </div>
+                        <div class="desserttext ">
+                            <p>岩漿布朗尼</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer ">
+        &copy;copyright
+    </footer>
+
+
+    <script>
+        let menuList = document.querySelector('.menulist');
+
+        window.addEventListener("scroll", function() {
+            if (document.documentElement.scrollTop > 825.58) {
+                menuList.classList.add("on");
+            } else {
+                menuList.classList.remove("on");
+            }
+        })
+    </script>
+</body>
+
+</html>

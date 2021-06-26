@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+article.crumbs {
+  width: 100%;
+  height: 85.2vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+article.crumbs img {
+  width: 100%;
+  height: 100%;
+}
+
+article.crumbs h1 {
+  position: absolute;
+  bottom: 250px;
+  left: 50px;
+  right: 50px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-weight: 500;
+  font-size: 12rem;
+}
+
+@media (max-width: 574px) {
+  article.crumbs h1 {
+    top: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  article.crumbs h1 {
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10rem;
+  }
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+article.about h1 {
+  text-align: start;
+  color: white;
+}
+
+article.about .leftimg {
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 375px) {
+  article.about .leftimg {
+    width: 100%;
+  }
+}
+
+article.about p {
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 375px) {
+  article.about p {
+    text-align: start;
+  }
+}
+
+@media (max-width: 574px) {
+  article.about .positionimg {
+    width: 100%;
+  }
+}
+
+article.about .position {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=aboutus.css.map */

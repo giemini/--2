@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/Sidemeal.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="crumbs">
+        <img src="./set_mealimg/unnamed.png" alt="">
+        <h1>副餐</h1>
+    </article>
+
+    <header>
+        <div class="logo">
+            <a href="./inedx.html">
+                <img src="./logoimg/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./food.html" class="navbar">
+                <div class="menu bill">菜單</div>
+            </a>
+            <a href="./restaurant.html">
+                <div class="restaurant">環境介紹</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="aboutus">關於我們</div>
+            </a>
+        </div>
+    </header>
+    <div class="menulist off">
+        <div class="list">
+            <a href="./set_meal.html">
+                <p>套餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./MainMeal.html">
+                <p>主餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./SideMeal.html">
+                <p>副餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Beverage.html">
+                <p>飲料</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Dessert.html">
+                <p>甜點</p>
+            </a>
+        </div>
+    </div>
+    <main>
+        <article class="Mainmeal">
+            <div class="main1">
+                <div class="title">
+                    <div class="titletxt">
+                        <p>濃湯</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="meal">
+                    <div class="soup">
+                        <div class="soupimg ">
+                            <img src="./SideMealimg/下載.jpg" alt=" ">
+                        </div>
+                        <div class="souptext ">
+                            <p>酥皮濃湯</p>
+                            <p>$100</p>
+                        </div>
+                    </div>
+                    <div class="soup">
+                        <div class="soupimg ">
+                            <img src="./SideMealimg/1517035603895.jpg" alt=" ">
+                        </div>
+                        <div class="souptext ">
+                            <p>義式田園蔬菜湯</p>
+                            <p>$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main2 ">
+                <div class="title ">
+                    <div class="titletxt ">
+                        <p>輕鬆小點</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="meal ">
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/article-594393b8c99de.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>黃金薯條</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/21752510719011_857.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>雞米花</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/unnamed.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>鱈魚條</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/sidemeal.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>炸物拼盤</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/3c04cf343f2320a79294a83554b4aec1.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>香辣雞翅</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                    <div class="Relax ">
+                        <div class="Relaximg ">
+                            <img src="./SideMealimg/炸起司條氣炸鍋-食譜成品照片.jpg" alt=" ">
+                        </div>
+                        <div class="Relaxtext ">
+                            <p>莫札瑞拉起士條</p>
+                            <p>$130</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer ">
+        &copy;copyright
+    </footer>
+
+
+    <script>
+        let menuList = document.querySelector('.menulist');
+
+        window.addEventListener("scroll", function() {
+            if (document.documentElement.scrollTop > 825.58) {
+                menuList.classList.add("on");
+            } else {
+                menuList.classList.remove("on");
+            }
+        })
+    </script>
+</body>
+
+</html>

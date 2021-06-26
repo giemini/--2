@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/set_meal.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="crumbs">
+        <img src="./set_mealimg/unnamed.png" alt="">
+        <h1>套餐</h1>
+    </article>
+
+    <header>
+        <div class="logo">
+            <a href="./inedx.html">
+                <img src="./logoimg/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./food.html" class="navbar">
+                <div class="menu bill">菜單</div>
+            </a>
+            <a href="./restaurant.html">
+                <div class="restaurant">環境介紹</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="aboutus">關於我們</div>
+            </a>
+        </div>
+    </header>
+    <div class="menulist off">
+        <div class="list">
+            <a href="./set_meal.html">
+                <p>套餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./MainMeal.html">
+                <p>主餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./SideMeal.html">
+                <p>副餐</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Beverage.html">
+                <p>飲料</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./Dessert.html">
+                <p>甜點</p>
+            </a>
+        </div>
+    </div>
+    <main>
+        <article class="introduction">
+            <div class="set">
+                <div class="food">
+                    <div class="img">
+                        <img src="./set_mealimg/20181217105049_34.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>豪華海陸套餐</p>
+                        <hr>
+                        <p>套餐附湯、沙拉、100元飲品、甜點</p>
+                        <p>$4990</p>
+                    </div>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="set">
+                <div class="food">
+                    <div class="img">
+                        <img src="./set_mealimg/JE191221000713228425.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>4人同樂分享餐</p>
+                        <hr>
+                        <p>套餐附湯、沙拉、100元飲品、甜點</p>
+                        <p>$3990</p>
+                    </div>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="set">
+                <div class="food">
+                    <div class="img">
+                        <img src="./set_mealimg/20180430152437-32b4419d.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>家庭聚會套餐</p>
+                        <hr>
+                        <p>套餐附湯、沙拉、100元飲品、甜點</p>
+                        <p>$2990</p>
+                    </div>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="set">
+                <div class="food">
+                    <div class="img">
+                        <img src="./set_mealimg/images.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>雙人海陸套餐</p>
+                        <hr>
+                        <p>套餐附湯、沙拉、100元飲品、甜點</p>
+                        <p>$2000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="set">
+                <div class="food">
+                    <div class="img">
+                        <img src="./set_mealimg/20170907154704-41fb9f34f5696c582aabcd360d9c569d-mobile.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>單人豪飽套餐</p>
+                        <hr>
+                        <p>套餐附湯、沙拉、100元飲品、甜點</p>
+                        <p>$1900</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        &copy;copyright
+    </footer>
+
+
+    <script>
+        let menuList = document.querySelector('.menulist');
+
+        window.addEventListener("scroll", function() {
+            if (document.documentElement.scrollTop > 825.58) {
+                menuList.classList.add("on");
+            } else {
+                menuList.classList.remove("on");
+            }
+        })
+    </script>
+</body>
+
+</html>

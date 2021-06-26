@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/restaurant.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="crumbs">
+        <img src="./set_mealimg/unnamed.png" alt="">
+        <h1>餐廳環境</h1>
+    </article>
+
+    <header>
+        <div class="logo">
+            <a href="./inedx.html">
+                <img src="./logoimg/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./food.html">
+                <div class="menu">菜單</div>
+            </a>
+            <a href="./restaurant.html">
+                <div class="restaurant">環境介紹</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="aboutus">關於我們</div>
+            </a>
+        </div>
+    </header>
+    <main>
+        <article class="model">
+            <h1>餐廳外觀</h1>
+            <hr>
+            <div class="outward">
+                <div class="picture">
+                    <div class="img">
+                        <img src="./restaurantimg/1594977404-2356909313-g.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./restaurantimg/20171112222810_27.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./restaurantimg/789404-PH.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./restaurantimg/sub_1.jpg.646x0_q95_crop-scale.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <h1>噴水池</h1>
+            <hr>
+            <div class="pool picture">
+                <div class="img">
+                    <img src="./restaurantimg/2-787x530.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/44025358190_47cc477830_o.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/201812241738091831B.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/a13f020408517170135.jpg" alt="">
+                </div>
+            </div> -->
+            <h1>餐廳吧檯</h1>
+            <hr>
+            <div class="Bar picture">
+                <div class="img">
+                    <img src="./restaurantimg/caption (1).jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/caption.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/unnamed.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/下載.jpg" alt="">
+                </div>
+            </div>
+            <h1>餐廳內部</h1>
+            <hr>
+            <div class="inside picture">
+                <div class="img">
+                    <img src="./restaurantimg/unnamed (1).jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/caption (2).jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/五克拉內部.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="./restaurantimg/7G32RHLLPZ2REQIORHSNGUHBKI.jpg" alt="">
+                </div>
+            </div>
+            <div class="overmodel">
+                <div class="bigimg">
+                    <img src="" alt="" id="bigimg">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        &copy;copyright
+    </footer>
+
+
+    <script>
+        let smallimg = document.querySelectorAll("article.model img");
+        let closeBtn = document.querySelector(".close");
+        let Overmodel = document.querySelector(".overmodel");
+        let Bigimg = document.querySelector('#bigimg');
+
+        function clickHandler() {
+            Overmodel.style.display = "block";
+            Bigimg.src = this.src;
+        }
+
+        function closeHandler() {
+            Overmodel.style.display = 'none';
+        }
+
+        smallimg.forEach(img => {
+            img.addEventListener('click', clickHandler);
+        })
+        closeBtn.addEventListener('click', closeHandler);
+    </script>
+</body>
+
+</html>

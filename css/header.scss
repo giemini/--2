@@ -1,0 +1,64 @@
+@import "./all.scss";
+header {
+    width: 100%;
+    display: flex;
+    background-color: #393E46;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    .logo {
+        width: 100px;
+        margin-left: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .nav {
+        width: calc(100% - 100px - 20px);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        a {
+            padding: 0 10%;
+            text-decoration: none;
+            color: white;
+        }
+        .bill {
+            &:hover {
+                .menulist {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.menulist {
+    display: flex;
+    position: sticky;
+    top: 104px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    .list {
+        display: flex;
+        margin: auto;
+        a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: flex;
+    transition: .5s;
+}
