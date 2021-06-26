@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="slider">
+        <div id="prev">
+            <img src="./swiperimg/button/left.png" alt="">
+        </div>
+        <div id="next">
+            <img src="./swiperimg/button/right.png" alt="">
+        </div>
+        <div id="swiper">
+            <img src="./swiperimg/4.jpg" alt="" id="lastclone">
+            <img src="./swiperimg/1.jpg" alt="">
+            <img src="./swiperimg/2.jpg" alt="">
+            <img src="./swiperimg/3.jpg" alt="">
+            <img src="./swiperimg/4.jpg" alt="">
+            <img src="./swiperimg/1.jpg" alt="" id="firstclone">
+        </div>
+
+    </article>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./logoimg/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./food.html">
+                <div class="menu">菜單</div>
+            </a>
+            <a href="./restaurant.html">
+                <div class="restaurant">環境介紹</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="aboutus">關於我們</div>
+            </a>
+        </div>
+    </header>
+    <main>
+        <article class="main">
+            <div class="titlebox">
+                <div class="title">
+                    <div class="text">
+                        <h1>軒食堂</h1>
+                        <p>
+                            軒食堂．義大利庭園餐廳 佔地寬闊的優質用餐環境，交通往來方便、設有停車區域；規劃良好的步道、綠意盎然的戶外用餐環境，室內以大量玻璃帷幕、挑高設計等，打造出明亮、無壓迫感的空間，座位區劃分為情人雅座、舒適沙發等區域，動線規劃良好、用餐環境寬敞，裝潢設計簡約典雅，讓人卸下生活壓力，在美食、美景與美麗的氣氛中體會身心靈的滿足。 堅持每日採用新鮮食材，誠心料理每道經典義大利菜色。
+                        </p>
+                    </div>
+                    <div class="picture">
+                        <img src="./indeximg/RUDY1515.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="foodbox">
+                <div class="food">
+                    <div class="picture">
+                        <img src="./indeximg/B25I8860-800x533(pp_w768_h511).jpg" alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="./indeximg/s_pixta_38281815_M.jpg" alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="./indeximg/14935.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            無論是義大利麵、義大利燉飯、濃場、麵包、沙拉、前菜、美味主菜、薄皮披薩、特色外賣商品等等義式料理，食材品質均嚴格管控。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="surroundbox">
+                <div class="surround">
+                    <div class="text">優美的用餐環境，給予您高級的用餐體驗 讓您用餐之餘也能享受典雅高級的氣氛
+                    </div>
+                    <div class="picture">
+                        <img src="./indeximg/0034.jpg" alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="./indeximg/RUDY1515.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <footer class="footer">
+        &copy;copyright
+    </footer>
+    <script>
+        window.onload = function() {
+            const swiper = document.querySelector('#swiper');
+            const images = document.querySelectorAll('#swiper img');
+            console.log(images)
+
+            //Button
+            const prevBtn = document.querySelector('#prev');
+            const nextBtn = document.querySelector('#next');
+
+            //counter
+            let counter = 0;
+            let img = document.querySelectorAll('#swiper img')
+            const size = images[0].clientWidth;
+            swiper.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+            //Buttonlistener
+
+            nextBtn.addEventListener('click', () => {
+                if (counter >= images.length - 1) return;
+                swiper.style.transition = "transform 0.4s ease-in-out";
+                counter++;
+                swiper.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (counter <= 0) return;
+                swiper.style.transition = "transform 0.4s ease-in-out";
+                counter--;
+                swiper.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            });
+
+            swiper.addEventListener('transitionend', () => {
+                if (images[counter].id === 'lastclone') {
+                    swiper.style.transition = "none";
+                    counter = images.length - 2;
+                    swiper.style.transform = 'translateX(' + (-size * counter) + 'px)';
+                }
+
+                if (images[counter].id === 'firstclone') {
+                    swiper.style.transition = "none";
+                    counter = images.length - counter;
+                    swiper.style.transform = 'translateX(' + (-size * counter) + 'px)';
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
